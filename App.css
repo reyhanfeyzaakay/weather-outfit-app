@@ -1,0 +1,43 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #b3e0ff, #ffffff);
+  color: #1c1c1c;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #357ab9;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  .button {
+    width: 100%;
+  }
+}
